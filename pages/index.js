@@ -12,7 +12,7 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          <img src="/images/butter.png" style={{width: '50%'}}></img>
+          <img src="/images/butter.png" className="banner"></img>
         </h1>
 
         <p className="description">
@@ -180,10 +180,20 @@ export default function Home() {
           height: 1em;
         }
 
+        .banner { 
+          width 50%
+        }
+
         @media (max-width: 600px) {
           .grid {
             width: 100%;
             flex-direction: column;
+          }
+        }
+
+        @media (max-width: 600px) {
+          .banner {
+            width: 75%;
           }
         }
       `}</style>
