@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Shows() {
-  return <h1><a href="">@rachel</a> your turn</h1>
+  return <Link href="/shows/hot"><a>hot!</a></Link>
 }
